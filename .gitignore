@@ -16,3 +16,5 @@ TTChallenger.xcodeproj/project.xcworkspace/xcuserdata/wechambers.xcuserdatad/Use
 *.xcscheme
 
 *.plist
+
+*.xcuserstate

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3601575E17BD846500B2209D /* PostsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3601575D17BD846500B2209D /* PostsViewController.m */; };
 		360B7FE617BD6EB300B655F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 360B7FE517BD6EB300B655F8 /* Foundation.framework */; };
 		360B7FE817BD6EB300B655F8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 360B7FE717BD6EB300B655F8 /* CoreGraphics.framework */; };
 		360B7FEA17BD6EB300B655F8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 360B7FE917BD6EB300B655F8 /* UIKit.framework */; };
@@ -39,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3601575C17BD846500B2209D /* PostsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostsViewController.h; sourceTree = "<group>"; };
+		3601575D17BD846500B2209D /* PostsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostsViewController.m; sourceTree = "<group>"; };
 		360B7FE217BD6EB300B655F8 /* TTChallenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TTChallenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		360B7FE517BD6EB300B655F8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		360B7FE717BD6EB300B655F8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -94,6 +97,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3601575B17BD843D00B2209D /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				3601575C17BD846500B2209D /* PostsViewController.h */,
+				3601575D17BD846500B2209D /* PostsViewController.m */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
 		360B7FD917BD6EB300B655F8 = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +141,7 @@
 		360B7FEB17BD6EB300B655F8 /* TTChallenger */ = {
 			isa = PBXGroup;
 			children = (
+				3601575B17BD843D00B2209D /* Main */,
 				360B801E17BD72A800B655F8 /* Welcome */,
 				360B7FF417BD6EB300B655F8 /* AppDelegate.h */,
 				360B7FF517BD6EB300B655F8 /* AppDelegate.m */,
@@ -281,6 +294,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				360B7FFC17BD6EB300B655F8 /* ViewController.m in Sources */,
+				3601575E17BD846500B2209D /* PostsViewController.m in Sources */,
 				360B802117BD72BC00B655F8 /* WelcomeViewController.m in Sources */,
 				360B802717BD72D900B655F8 /* LoginViewController.m in Sources */,
 				360B7FF617BD6EB300B655F8 /* AppDelegate.m in Sources */,
@@ -496,6 +510,7 @@
 				360B801617BD6EB300B655F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		360B801717BD6EB300B655F8 /* Build configuration list for PBXNativeTarget "TTChallengerTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +519,7 @@
 				360B801917BD6EB300B655F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

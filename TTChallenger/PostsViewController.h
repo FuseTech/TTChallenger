@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  PostsViewController.h
 //  TTChallenger
 //
 //  Created by Weston Chambers on 8/15/13.
@@ -8,10 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
-
-+(FatFractal *)ff;
+@interface PostsViewController : UIViewController
 
 @end

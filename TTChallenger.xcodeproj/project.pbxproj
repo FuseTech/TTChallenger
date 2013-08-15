@@ -1,0 +1,511 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		360B7FE617BD6EB300B655F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 360B7FE517BD6EB300B655F8 /* Foundation.framework */; };
+		360B7FE817BD6EB300B655F8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 360B7FE717BD6EB300B655F8 /* CoreGraphics.framework */; };
+		360B7FEA17BD6EB300B655F8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 360B7FE917BD6EB300B655F8 /* UIKit.framework */; };
+		360B7FF017BD6EB300B655F8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 360B7FEE17BD6EB300B655F8 /* InfoPlist.strings */; };
+		360B7FF217BD6EB300B655F8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 360B7FF117BD6EB300B655F8 /* main.m */; };
+		360B7FF617BD6EB300B655F8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 360B7FF517BD6EB300B655F8 /* AppDelegate.m */; };
+		360B7FF917BD6EB300B655F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 360B7FF717BD6EB300B655F8 /* Main.storyboard */; };
+		360B7FFC17BD6EB300B655F8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 360B7FFB17BD6EB300B655F8 /* ViewController.m */; };
+		360B7FFE17BD6EB300B655F8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 360B7FFD17BD6EB300B655F8 /* Images.xcassets */; };
+		360B800517BD6EB300B655F8 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 360B800417BD6EB300B655F8 /* XCTest.framework */; };
+		360B800617BD6EB300B655F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 360B7FE517BD6EB300B655F8 /* Foundation.framework */; };
+		360B800717BD6EB300B655F8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 360B7FE917BD6EB300B655F8 /* UIKit.framework */; };
+		360B800F17BD6EB300B655F8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 360B800D17BD6EB300B655F8 /* InfoPlist.strings */; };
+		360B801117BD6EB300B655F8 /* TTChallengerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 360B801017BD6EB300B655F8 /* TTChallengerTests.m */; };
+		360B801B17BD6ECF00B655F8 /* FFEF.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 360B801A17BD6ECF00B655F8 /* FFEF.framework */; };
+		360B801D17BD6EDE00B655F8 /* MultipeerConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 360B801C17BD6EDE00B655F8 /* MultipeerConnectivity.framework */; };
+		360B802117BD72BC00B655F8 /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 360B802017BD72BC00B655F8 /* WelcomeViewController.m */; };
+		360B802417BD72CC00B655F8 /* SignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 360B802317BD72CC00B655F8 /* SignupViewController.m */; };
+		360B802717BD72D900B655F8 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 360B802617BD72D900B655F8 /* LoginViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		360B800817BD6EB300B655F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 360B7FDA17BD6EB300B655F8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 360B7FE117BD6EB300B655F8;
+			remoteInfo = TTChallenger;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		360B7FE217BD6EB300B655F8 /* TTChallenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TTChallenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		360B7FE517BD6EB300B655F8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		360B7FE717BD6EB300B655F8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		360B7FE917BD6EB300B655F8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		360B7FED17BD6EB300B655F8 /* TTChallenger-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TTChallenger-Info.plist"; sourceTree = "<group>"; };
+		360B7FEF17BD6EB300B655F8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		360B7FF117BD6EB300B655F8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		360B7FF317BD6EB300B655F8 /* TTChallenger-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TTChallenger-Prefix.pch"; sourceTree = "<group>"; };
+		360B7FF417BD6EB300B655F8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		360B7FF517BD6EB300B655F8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		360B7FF817BD6EB300B655F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		360B7FFA17BD6EB300B655F8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		360B7FFB17BD6EB300B655F8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		360B7FFD17BD6EB300B655F8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		360B800317BD6EB300B655F8 /* TTChallengerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TTChallengerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		360B800417BD6EB300B655F8 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		360B800C17BD6EB300B655F8 /* TTChallengerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TTChallengerTests-Info.plist"; sourceTree = "<group>"; };
+		360B800E17BD6EB300B655F8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		360B801017BD6EB300B655F8 /* TTChallengerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTChallengerTests.m; sourceTree = "<group>"; };
+		360B801A17BD6ECF00B655F8 /* FFEF.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FFEF.framework; sourceTree = "<group>"; };
+		360B801C17BD6EDE00B655F8 /* MultipeerConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MultipeerConnectivity.framework; path = System/Library/Frameworks/MultipeerConnectivity.framework; sourceTree = SDKROOT; };
+		360B801F17BD72BC00B655F8 /* WelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeViewController.h; sourceTree = "<group>"; };
+		360B802017BD72BC00B655F8 /* WelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeViewController.m; sourceTree = "<group>"; };
+		360B802217BD72CC00B655F8 /* SignupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignupViewController.h; sourceTree = "<group>"; };
+		360B802317BD72CC00B655F8 /* SignupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignupViewController.m; sourceTree = "<group>"; };
+		360B802517BD72D900B655F8 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		360B802617BD72D900B655F8 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		360B7FDF17BD6EB300B655F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				360B801D17BD6EDE00B655F8 /* MultipeerConnectivity.framework in Frameworks */,
+				360B7FE817BD6EB300B655F8 /* CoreGraphics.framework in Frameworks */,
+				360B801B17BD6ECF00B655F8 /* FFEF.framework in Frameworks */,
+				360B7FEA17BD6EB300B655F8 /* UIKit.framework in Frameworks */,
+				360B7FE617BD6EB300B655F8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		360B800017BD6EB300B655F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				360B800517BD6EB300B655F8 /* XCTest.framework in Frameworks */,
+				360B800717BD6EB300B655F8 /* UIKit.framework in Frameworks */,
+				360B800617BD6EB300B655F8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		360B7FD917BD6EB300B655F8 = {
+			isa = PBXGroup;
+			children = (
+				360B7FEB17BD6EB300B655F8 /* TTChallenger */,
+				360B800A17BD6EB300B655F8 /* TTChallengerTests */,
+				360B7FE417BD6EB300B655F8 /* Frameworks */,
+				360B7FE317BD6EB300B655F8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		360B7FE317BD6EB300B655F8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				360B7FE217BD6EB300B655F8 /* TTChallenger.app */,
+				360B800317BD6EB300B655F8 /* TTChallengerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		360B7FE417BD6EB300B655F8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				360B801C17BD6EDE00B655F8 /* MultipeerConnectivity.framework */,
+				360B801A17BD6ECF00B655F8 /* FFEF.framework */,
+				360B7FE517BD6EB300B655F8 /* Foundation.framework */,
+				360B7FE717BD6EB300B655F8 /* CoreGraphics.framework */,
+				360B7FE917BD6EB300B655F8 /* UIKit.framework */,
+				360B800417BD6EB300B655F8 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		360B7FEB17BD6EB300B655F8 /* TTChallenger */ = {
+			isa = PBXGroup;
+			children = (
+				360B801E17BD72A800B655F8 /* Welcome */,
+				360B7FF417BD6EB300B655F8 /* AppDelegate.h */,
+				360B7FF517BD6EB300B655F8 /* AppDelegate.m */,
+				360B7FF717BD6EB300B655F8 /* Main.storyboard */,
+				360B7FFA17BD6EB300B655F8 /* ViewController.h */,
+				360B7FFB17BD6EB300B655F8 /* ViewController.m */,
+				360B7FFD17BD6EB300B655F8 /* Images.xcassets */,
+				360B7FEC17BD6EB300B655F8 /* Supporting Files */,
+			);
+			path = TTChallenger;
+			sourceTree = "<group>";
+		};
+		360B7FEC17BD6EB300B655F8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				360B7FED17BD6EB300B655F8 /* TTChallenger-Info.plist */,
+				360B7FEE17BD6EB300B655F8 /* InfoPlist.strings */,
+				360B7FF117BD6EB300B655F8 /* main.m */,
+				360B7FF317BD6EB300B655F8 /* TTChallenger-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		360B800A17BD6EB300B655F8 /* TTChallengerTests */ = {
+			isa = PBXGroup;
+			children = (
+				360B801017BD6EB300B655F8 /* TTChallengerTests.m */,
+				360B800B17BD6EB300B655F8 /* Supporting Files */,
+			);
+			path = TTChallengerTests;
+			sourceTree = "<group>";
+		};
+		360B800B17BD6EB300B655F8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				360B800C17BD6EB300B655F8 /* TTChallengerTests-Info.plist */,
+				360B800D17BD6EB300B655F8 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		360B801E17BD72A800B655F8 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				360B801F17BD72BC00B655F8 /* WelcomeViewController.h */,
+				360B802017BD72BC00B655F8 /* WelcomeViewController.m */,
+				360B802217BD72CC00B655F8 /* SignupViewController.h */,
+				360B802317BD72CC00B655F8 /* SignupViewController.m */,
+				360B802517BD72D900B655F8 /* LoginViewController.h */,
+				360B802617BD72D900B655F8 /* LoginViewController.m */,
+			);
+			name = Welcome;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		360B7FE117BD6EB300B655F8 /* TTChallenger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 360B801417BD6EB300B655F8 /* Build configuration list for PBXNativeTarget "TTChallenger" */;
+			buildPhases = (
+				360B7FDE17BD6EB300B655F8 /* Sources */,
+				360B7FDF17BD6EB300B655F8 /* Frameworks */,
+				360B7FE017BD6EB300B655F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TTChallenger;
+			productName = TTChallenger;
+			productReference = 360B7FE217BD6EB300B655F8 /* TTChallenger.app */;
+			productType = "com.apple.product-type.application";
+		};
+		360B800217BD6EB300B655F8 /* TTChallengerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 360B801717BD6EB300B655F8 /* Build configuration list for PBXNativeTarget "TTChallengerTests" */;
+			buildPhases = (
+				360B7FFF17BD6EB300B655F8 /* Sources */,
+				360B800017BD6EB300B655F8 /* Frameworks */,
+				360B800117BD6EB300B655F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				360B800917BD6EB300B655F8 /* PBXTargetDependency */,
+			);
+			name = TTChallengerTests;
+			productName = TTChallengerTests;
+			productReference = 360B800317BD6EB300B655F8 /* TTChallengerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		360B7FDA17BD6EB300B655F8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Weston Chambers";
+				TargetAttributes = {
+					360B800217BD6EB300B655F8 = {
+						TestTargetID = 360B7FE117BD6EB300B655F8;
+					};
+				};
+			};
+			buildConfigurationList = 360B7FDD17BD6EB300B655F8 /* Build configuration list for PBXProject "TTChallenger" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 360B7FD917BD6EB300B655F8;
+			productRefGroup = 360B7FE317BD6EB300B655F8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				360B7FE117BD6EB300B655F8 /* TTChallenger */,
+				360B800217BD6EB300B655F8 /* TTChallengerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		360B7FE017BD6EB300B655F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				360B7FFE17BD6EB300B655F8 /* Images.xcassets in Resources */,
+				360B7FF017BD6EB300B655F8 /* InfoPlist.strings in Resources */,
+				360B7FF917BD6EB300B655F8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		360B800117BD6EB300B655F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				360B800F17BD6EB300B655F8 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		360B7FDE17BD6EB300B655F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				360B7FFC17BD6EB300B655F8 /* ViewController.m in Sources */,
+				360B802117BD72BC00B655F8 /* WelcomeViewController.m in Sources */,
+				360B802717BD72D900B655F8 /* LoginViewController.m in Sources */,
+				360B7FF617BD6EB300B655F8 /* AppDelegate.m in Sources */,
+				360B7FF217BD6EB300B655F8 /* main.m in Sources */,
+				360B802417BD72CC00B655F8 /* SignupViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		360B7FFF17BD6EB300B655F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				360B801117BD6EB300B655F8 /* TTChallengerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		360B800917BD6EB300B655F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 360B7FE117BD6EB300B655F8 /* TTChallenger */;
+			targetProxy = 360B800817BD6EB300B655F8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		360B7FEE17BD6EB300B655F8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				360B7FEF17BD6EB300B655F8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		360B7FF717BD6EB300B655F8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				360B7FF817BD6EB300B655F8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		360B800D17BD6EB300B655F8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				360B800E17BD6EB300B655F8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		360B801217BD6EB300B655F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		360B801317BD6EB300B655F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		360B801517BD6EB300B655F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/wechambers/Development/Practice/TTChallenger,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TTChallenger/TTChallenger-Prefix.pch";
+				INFOPLIST_FILE = "TTChallenger/TTChallenger-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		360B801617BD6EB300B655F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/wechambers/Development/Practice/TTChallenger,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TTChallenger/TTChallenger-Prefix.pch";
+				INFOPLIST_FILE = "TTChallenger/TTChallenger-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		360B801817BD6EB300B655F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TTChallenger.app/TTChallenger";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TTChallenger/TTChallenger-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "TTChallengerTests/TTChallengerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		360B801917BD6EB300B655F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TTChallenger.app/TTChallenger";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TTChallenger/TTChallenger-Prefix.pch";
+				INFOPLIST_FILE = "TTChallengerTests/TTChallengerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		360B7FDD17BD6EB300B655F8 /* Build configuration list for PBXProject "TTChallenger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				360B801217BD6EB300B655F8 /* Debug */,
+				360B801317BD6EB300B655F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		360B801417BD6EB300B655F8 /* Build configuration list for PBXNativeTarget "TTChallenger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				360B801517BD6EB300B655F8 /* Debug */,
+				360B801617BD6EB300B655F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		360B801717BD6EB300B655F8 /* Build configuration list for PBXNativeTarget "TTChallengerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				360B801817BD6EB300B655F8 /* Debug */,
+				360B801917BD6EB300B655F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 360B7FDA17BD6EB300B655F8 /* Project object */;
+}

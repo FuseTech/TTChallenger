@@ -7,6 +7,9 @@
 //
 
 #import "SignupViewController.h"
+#import "MBProgressHUD.h"
+#import "KeychainItemWrapper.h"
+#import "AppDelegate.h"
 
 @interface SignupViewController ()
 
@@ -35,4 +38,10 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)cancelButtonPressed:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (IBAction)signUpButtonPressed:(id)sender {
+}
 @end

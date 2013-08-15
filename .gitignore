@@ -12,3 +12,7 @@ UserInterfaceState.xcuserstate
 .DS_Store
 
 TTChallenger.xcodeproj/project.xcworkspace/xcuserdata/wechambers.xcuserdatad/UserInterfaceState.xcuserstate
+
+*.xcscheme
+
+*.plist

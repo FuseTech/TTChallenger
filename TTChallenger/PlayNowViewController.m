@@ -13,6 +13,9 @@
 @property (nonatomic, strong) MCPeerID *peerID;
 @property (nonatomic, strong) MCSession *session;
 @property (nonatomic, strong) MCAdvertiserAssistant *assistant;
+@property (nonatomic, strong) MCBrowserViewController *browserVC;
+- (IBAction)challengePressed:(id)sender;
+
 
 
 @end
@@ -83,11 +86,21 @@
     if (state == MCSessionStateConnected) {
         //Challenge was accepted. Create Match, schedule local notification
         //Stop advertising
+        [self.browserVC dismissViewControllerAnimated:YES completion:nil];
+        NSArray *opponentArray = [self.session connectedPeers];
+        NSString *opponent = [opponentArray objectAtIndex:0];
+        
+        [self createMatchBetween:[[FatFractal main]loggedInUser].userName andOpponent:opponent];
+        
         
     } else if (state == MCSessionStateNotConnected) {
         
     }
     
+}
+
+-(void)createMatchBetween:(NSString *)challenger andOpponent:(NSString *)opponent {
+    NSLog(@"Stop");
 }
 
 //To supress warnings
@@ -103,5 +116,16 @@
 -(void)session:(MCSession *)session didReceiveData:(NSData *)data fromPeer:(MCPeerID *)peerID {
     
     
+}
+- (IBAction)challengePressed:(id)sender {
+    self.browserVC = nil;
+    self.peerID = [[MCPeerID alloc] initWithDisplayName:[[FatFractal main] loggedInUser].userName];
+    self.session = [[MCSession alloc] initWithPeer:self.peerID];
+    self.session.delegate = self;
+    if (!self.browserVC) {
+        self.browserVC = [[MCBrowserViewController alloc] initWithServiceType:@"TTC" session:self.session];
+        self.browserVC.delegate = self;
+    }
+    [self presentViewController:self.browserVC animated:YES completion:nil];
 }
 @end

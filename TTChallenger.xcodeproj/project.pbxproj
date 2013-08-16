@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		1BE91A8F17BE852E00BEDEF1 /* FFEF.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BE91A8E17BE852E00BEDEF1 /* FFEF.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		3600FB2A17BEA5F6007B8A5A /* PlayNowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3600FB2917BEA5F6007B8A5A /* PlayNowViewController.m */; };
+		3600FB2E17BEB272007B8A5A /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = 3600FB2D17BEB272007B8A5A /* Post.m */; };
+		3600FB3017BEB7A2007B8A5A /* picture.png in Resources */ = {isa = PBXBuildFile; fileRef = 3600FB2F17BEB7A2007B8A5A /* picture.png */; };
 		3601575E17BD846500B2209D /* PostsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3601575D17BD846500B2209D /* PostsViewController.m */; };
 		3601576317BD8E5800B2209D /* KeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3601576017BD8E5800B2209D /* KeychainItemWrapper.m */; };
 		3601576417BD8E5800B2209D /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 3601576217BD8E5800B2209D /* MBProgressHUD.m */; };
@@ -46,6 +48,9 @@
 		1BE91A8E17BE852E00BEDEF1 /* FFEF.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FFEF.framework; sourceTree = "<group>"; };
 		3600FB2817BEA5F6007B8A5A /* PlayNowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayNowViewController.h; sourceTree = "<group>"; };
 		3600FB2917BEA5F6007B8A5A /* PlayNowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayNowViewController.m; sourceTree = "<group>"; };
+		3600FB2C17BEB272007B8A5A /* Post.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Post.h; sourceTree = "<group>"; };
+		3600FB2D17BEB272007B8A5A /* Post.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Post.m; sourceTree = "<group>"; };
+		3600FB2F17BEB7A2007B8A5A /* picture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = picture.png; sourceTree = "<group>"; };
 		3601575C17BD846500B2209D /* PostsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostsViewController.h; sourceTree = "<group>"; };
 		3601575D17BD846500B2209D /* PostsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostsViewController.m; sourceTree = "<group>"; };
 		3601575F17BD8E5800B2209D /* KeychainItemWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainItemWrapper.h; sourceTree = "<group>"; };
@@ -106,6 +111,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3600FB2B17BEB257007B8A5A /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				3600FB2C17BEB272007B8A5A /* Post.h */,
+				3600FB2D17BEB272007B8A5A /* Post.m */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
 		3601575B17BD843D00B2209D /* Main */ = {
 			isa = PBXGroup;
 			children = (
@@ -163,6 +177,7 @@
 		360B7FEB17BD6EB300B655F8 /* TTChallenger */ = {
 			isa = PBXGroup;
 			children = (
+				3600FB2B17BEB257007B8A5A /* Data */,
 				3601576517BD8E5C00B2209D /* External */,
 				3601575B17BD843D00B2209D /* Main */,
 				360B801E17BD72A800B655F8 /* Welcome */,
@@ -180,6 +195,7 @@
 		360B7FEC17BD6EB300B655F8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3600FB2F17BEB7A2007B8A5A /* picture.png */,
 				360B7FED17BD6EB300B655F8 /* TTChallenger-Info.plist */,
 				360B7FEE17BD6EB300B655F8 /* InfoPlist.strings */,
 				360B7FF117BD6EB300B655F8 /* main.m */,
@@ -295,6 +311,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3600FB3017BEB7A2007B8A5A /* picture.png in Resources */,
 				360B7FFE17BD6EB300B655F8 /* Images.xcassets in Resources */,
 				360B7FF017BD6EB300B655F8 /* InfoPlist.strings in Resources */,
 				360B7FF917BD6EB300B655F8 /* Main.storyboard in Resources */,
@@ -324,6 +341,7 @@
 				3601576417BD8E5800B2209D /* MBProgressHUD.m in Sources */,
 				3601576317BD8E5800B2209D /* KeychainItemWrapper.m in Sources */,
 				360B7FF617BD6EB300B655F8 /* AppDelegate.m in Sources */,
+				3600FB2E17BEB272007B8A5A /* Post.m in Sources */,
 				360B7FF217BD6EB300B655F8 /* main.m in Sources */,
 				360B802417BD72CC00B655F8 /* SignupViewController.m in Sources */,
 			);

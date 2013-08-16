@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WelcomeViewController.h"
 
-@interface PostsViewController : UIViewController
+@interface PostsViewController : UIViewController <WelcomeViewControllerDelegate>
+
+-(void)userIsAuthenticatedFromAppDelegateOnLaunch;
 
 @end

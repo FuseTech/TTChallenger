@@ -15,5 +15,6 @@
 
 +(FatFractal *)ff;
 +(KeychainItemWrapper *)keychainItem;
++(BOOL)checkForAuthentication;
 
 @end

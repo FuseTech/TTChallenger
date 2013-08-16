@@ -57,6 +57,13 @@ static KeychainItemWrapper *_keychainItem;
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
-
++(BOOL)checkForAuthentication {
+    if ([_ff loggedIn] || ([_keychainItem objectForKey:(__bridge id)(kSecAttrAccount)] != nil && ![[_keychainItem objectForKey:(__bridge id)(kSecAttrAccount)] isEqual:@""])) {
+        NSLog(@"Logged in");
+        return YES;
+    } else {
+        return NO;
+    }
+}
 
 @end

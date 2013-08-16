@@ -56,4 +56,12 @@
     
 }
 
+-(void)userIsAuthenticatedFromAppDelegateOnLaunch{
+    
+}
+
+-(void)userDidAuthenticate{
+    
+}
+
 @end

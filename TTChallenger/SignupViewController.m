@@ -39,7 +39,7 @@
 }
 
 - (IBAction)cancelButtonPressed:(id)sender {
-    [self dismissViewControllerAnimated:YES completion:nil];
+    [self dismissViewControllerAnimated:YES completion:^{}];
 }
 
 - (IBAction)signUpButtonPressed:(id)sender {
@@ -70,7 +70,7 @@
             if (theObj) {
                 [self saveUserCredentialsInKeychain];
                 [MBProgressHUD hideHUDForView:self.view animated:YES];
-                [self dismissViewControllerAnimated:YES completion:^{
+                [self dismissViewControllerAnimated:NO completion:^{
                     [self handleSuccessfulSignup];
                 }];
             }

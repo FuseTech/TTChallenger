@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1BE91A8F17BE852E00BEDEF1 /* FFEF.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BE91A8E17BE852E00BEDEF1 /* FFEF.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		3600FB2A17BEA5F6007B8A5A /* PlayNowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3600FB2917BEA5F6007B8A5A /* PlayNowViewController.m */; };
 		3601575E17BD846500B2209D /* PostsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3601575D17BD846500B2209D /* PostsViewController.m */; };
 		3601576317BD8E5800B2209D /* KeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3601576017BD8E5800B2209D /* KeychainItemWrapper.m */; };
 		3601576417BD8E5800B2209D /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 3601576217BD8E5800B2209D /* MBProgressHUD.m */; };
@@ -43,6 +44,8 @@
 
 /* Begin PBXFileReference section */
 		1BE91A8E17BE852E00BEDEF1 /* FFEF.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FFEF.framework; sourceTree = "<group>"; };
+		3600FB2817BEA5F6007B8A5A /* PlayNowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayNowViewController.h; sourceTree = "<group>"; };
+		3600FB2917BEA5F6007B8A5A /* PlayNowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayNowViewController.m; sourceTree = "<group>"; };
 		3601575C17BD846500B2209D /* PostsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostsViewController.h; sourceTree = "<group>"; };
 		3601575D17BD846500B2209D /* PostsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostsViewController.m; sourceTree = "<group>"; };
 		3601575F17BD8E5800B2209D /* KeychainItemWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainItemWrapper.h; sourceTree = "<group>"; };
@@ -108,6 +111,8 @@
 			children = (
 				3601575C17BD846500B2209D /* PostsViewController.h */,
 				3601575D17BD846500B2209D /* PostsViewController.m */,
+				3600FB2817BEA5F6007B8A5A /* PlayNowViewController.h */,
+				3600FB2917BEA5F6007B8A5A /* PlayNowViewController.m */,
 			);
 			name = Main;
 			sourceTree = "<group>";
@@ -314,6 +319,7 @@
 				360B7FFC17BD6EB300B655F8 /* ViewController.m in Sources */,
 				3601575E17BD846500B2209D /* PostsViewController.m in Sources */,
 				360B802117BD72BC00B655F8 /* WelcomeViewController.m in Sources */,
+				3600FB2A17BEA5F6007B8A5A /* PlayNowViewController.m in Sources */,
 				360B802717BD72D900B655F8 /* LoginViewController.m in Sources */,
 				3601576417BD8E5800B2209D /* MBProgressHUD.m in Sources */,
 				3601576317BD8E5800B2209D /* KeychainItemWrapper.m in Sources */,

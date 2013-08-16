@@ -19,6 +19,7 @@
 @property (nonatomic, assign) id <LoginViewControllerDelegate> delegate;
 - (IBAction)cancelPressed:(id)sender;
 - (IBAction)loginPressed:(id)sender;
+
 @property (weak, nonatomic) IBOutlet UITextField *usernameTextField;
 @property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
 

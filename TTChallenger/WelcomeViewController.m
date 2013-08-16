@@ -8,6 +8,7 @@
 
 #import "WelcomeViewController.h"
 
+
 @interface WelcomeViewController ()
 
 @end
@@ -36,9 +37,13 @@
 }
 
 - (IBAction)signUpPressed:(id)sender {
+
+
 }
 
 - (IBAction)loginPressed:(id)sender {
+    
+
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
@@ -54,12 +59,13 @@
 
 #pragma mark - SignupVC Delegate
 -(void)signupViewControllerDidSignupUser {
-    [self dismissViewControllerAnimated:YES completion:nil];
+    [self dismissViewControllerAnimated:NO completion:nil];
     [self userSuccessfullyAuthenticated];
 }
 
 #pragma mark - Login VC delegate
 -(void)loginViewDidLoginUser {
+    
     [self dismissViewControllerAnimated:NO completion:nil];
     [self userSuccessfullyAuthenticated];
 }

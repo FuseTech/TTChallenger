@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1BE91A8F17BE852E00BEDEF1 /* FFEF.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BE91A8E17BE852E00BEDEF1 /* FFEF.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		3601575E17BD846500B2209D /* PostsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3601575D17BD846500B2209D /* PostsViewController.m */; };
 		3601576317BD8E5800B2209D /* KeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3601576017BD8E5800B2209D /* KeychainItemWrapper.m */; };
 		3601576417BD8E5800B2209D /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 3601576217BD8E5800B2209D /* MBProgressHUD.m */; };
@@ -24,7 +25,6 @@
 		360B800717BD6EB300B655F8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 360B7FE917BD6EB300B655F8 /* UIKit.framework */; };
 		360B800F17BD6EB300B655F8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 360B800D17BD6EB300B655F8 /* InfoPlist.strings */; };
 		360B801117BD6EB300B655F8 /* TTChallengerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 360B801017BD6EB300B655F8 /* TTChallengerTests.m */; };
-		360B801B17BD6ECF00B655F8 /* FFEF.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 360B801A17BD6ECF00B655F8 /* FFEF.framework */; };
 		360B801D17BD6EDE00B655F8 /* MultipeerConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 360B801C17BD6EDE00B655F8 /* MultipeerConnectivity.framework */; };
 		360B802117BD72BC00B655F8 /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 360B802017BD72BC00B655F8 /* WelcomeViewController.m */; };
 		360B802417BD72CC00B655F8 /* SignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 360B802317BD72CC00B655F8 /* SignupViewController.m */; };
@@ -42,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1BE91A8E17BE852E00BEDEF1 /* FFEF.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FFEF.framework; sourceTree = "<group>"; };
 		3601575C17BD846500B2209D /* PostsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostsViewController.h; sourceTree = "<group>"; };
 		3601575D17BD846500B2209D /* PostsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostsViewController.m; sourceTree = "<group>"; };
 		3601575F17BD8E5800B2209D /* KeychainItemWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainItemWrapper.h; sourceTree = "<group>"; };
@@ -67,7 +68,6 @@
 		360B800C17BD6EB300B655F8 /* TTChallengerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TTChallengerTests-Info.plist"; sourceTree = "<group>"; };
 		360B800E17BD6EB300B655F8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		360B801017BD6EB300B655F8 /* TTChallengerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTChallengerTests.m; sourceTree = "<group>"; };
-		360B801A17BD6ECF00B655F8 /* FFEF.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FFEF.framework; sourceTree = "<group>"; };
 		360B801C17BD6EDE00B655F8 /* MultipeerConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MultipeerConnectivity.framework; path = System/Library/Frameworks/MultipeerConnectivity.framework; sourceTree = SDKROOT; };
 		360B801F17BD72BC00B655F8 /* WelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeViewController.h; sourceTree = "<group>"; };
 		360B802017BD72BC00B655F8 /* WelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeViewController.m; sourceTree = "<group>"; };
@@ -84,7 +84,7 @@
 			files = (
 				360B801D17BD6EDE00B655F8 /* MultipeerConnectivity.framework in Frameworks */,
 				360B7FE817BD6EB300B655F8 /* CoreGraphics.framework in Frameworks */,
-				360B801B17BD6ECF00B655F8 /* FFEF.framework in Frameworks */,
+				1BE91A8F17BE852E00BEDEF1 /* FFEF.framework in Frameworks */,
 				360B7FEA17BD6EB300B655F8 /* UIKit.framework in Frameworks */,
 				360B7FE617BD6EB300B655F8 /* Foundation.framework in Frameworks */,
 			);
@@ -145,8 +145,8 @@
 		360B7FE417BD6EB300B655F8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1BE91A8E17BE852E00BEDEF1 /* FFEF.framework */,
 				360B801C17BD6EDE00B655F8 /* MultipeerConnectivity.framework */,
-				360B801A17BD6ECF00B655F8 /* FFEF.framework */,
 				360B7FE517BD6EB300B655F8 /* Foundation.framework */,
 				360B7FE717BD6EB300B655F8 /* CoreGraphics.framework */,
 				360B7FE917BD6EB300B655F8 /* UIKit.framework */,
@@ -445,6 +445,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/wechambers/Development/Practice/TTChallenger,
+					/Users/umanjunath/Documents/TTChallenger,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TTChallenger/TTChallenger-Prefix.pch";
@@ -462,6 +463,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/wechambers/Development/Practice/TTChallenger,
+					/Users/umanjunath/Documents/TTChallenger,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TTChallenger/TTChallenger-Prefix.pch";

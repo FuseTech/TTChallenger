@@ -8,7 +8,7 @@
 
 #import "LoginViewController.h"
 
-@interface LoginViewController ()
+@interface LoginViewController () <UITextFieldDelegate>
 
 @end
 
@@ -35,4 +35,9 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)cancelPressed:(id)sender {
+}
+
+- (IBAction)loginPressed:(id)sender {
+}
 @end

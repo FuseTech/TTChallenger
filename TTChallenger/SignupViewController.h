@@ -8,10 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol SignUpViewControllerDelegate <NSObject>
+-(void)signupViewControllerDidSignupUser;
+@end
+
 @interface SignupViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UITextField *nameTextField;
 @property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
 @property (weak, nonatomic) IBOutlet UITextField *emailTextField;
+@property (nonatomic, assign) id <SignUpViewControllerDelegate> delegate;
 - (IBAction)cancelButtonPressed:(id)sender;
 - (IBAction)signUpButtonPressed:(id)sender;
 

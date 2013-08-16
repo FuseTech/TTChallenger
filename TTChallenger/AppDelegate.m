@@ -10,12 +10,17 @@
 static NSString *baseUrl = @"http://wchambers.fatfractal.com/TTChallenger";
 static NSString *sslUrl = @"https://wchambers.fatfractal.com/TTChallenger";
 static FatFractal *_ff;
+static KeychainItemWrapper *_keychainItem;
 
 
 @implementation AppDelegate
 
 +(FatFractal *)ff {
     return  _ff;
+}
+
++ (KeychainItemWrapper *)keychainItem {
+    return _keychainItem;
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions

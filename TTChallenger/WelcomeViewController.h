@@ -7,7 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SignupViewController.h"
+#import "LoginViewController.h"
 
-@interface WelcomeViewController : UIViewController
+@protocol WelcomeViewControllerDelegate <NSObject>
+
+-(void)userDidAuthenticate;
+
+@end
+
+@interface WelcomeViewController : UIViewController <SignUpViewControllerDelegate, LoginViewControllerDelegate>
+@property (nonatomic, assign) id <WelcomeViewControllerDelegate> delegate;
+- (IBAction)signUpPressed:(id)sender;
+- (IBAction)loginPressed:(id)sender;
+
+
 
 @end

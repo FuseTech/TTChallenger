@@ -32,6 +32,7 @@
 		360B802117BD72BC00B655F8 /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 360B802017BD72BC00B655F8 /* WelcomeViewController.m */; };
 		360B802417BD72CC00B655F8 /* SignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 360B802317BD72CC00B655F8 /* SignupViewController.m */; };
 		360B802717BD72D900B655F8 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 360B802617BD72D900B655F8 /* LoginViewController.m */; };
+		361FFAD717C17F8100C45563 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 361FFAD617C17F8100C45563 /* ProfileViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,8 @@
 		360B802317BD72CC00B655F8 /* SignupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignupViewController.m; sourceTree = "<group>"; };
 		360B802517BD72D900B655F8 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		360B802617BD72D900B655F8 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		361FFAD517C17F8100C45563 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		361FFAD617C17F8100C45563 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +130,8 @@
 				3601575D17BD846500B2209D /* PostsViewController.m */,
 				3600FB2817BEA5F6007B8A5A /* PlayNowViewController.h */,
 				3600FB2917BEA5F6007B8A5A /* PlayNowViewController.m */,
+				361FFAD517C17F8100C45563 /* ProfileViewController.h */,
+				361FFAD617C17F8100C45563 /* ProfileViewController.m */,
 			);
 			name = Main;
 			sourceTree = "<group>";
@@ -343,6 +348,7 @@
 				360B7FF617BD6EB300B655F8 /* AppDelegate.m in Sources */,
 				3600FB2E17BEB272007B8A5A /* Post.m in Sources */,
 				360B7FF217BD6EB300B655F8 /* main.m in Sources */,
+				361FFAD717C17F8100C45563 /* ProfileViewController.m in Sources */,
 				360B802417BD72CC00B655F8 /* SignupViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

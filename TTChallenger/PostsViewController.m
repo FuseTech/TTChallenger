@@ -9,9 +9,10 @@
 #import "PostsViewController.h"
 #import "AppDelegate.h"
 
-@interface PostsViewController ()
+@interface PostsViewController () <UIActionSheetDelegate>
 
 - (IBAction)logoutPressed:(id)sender;
+- (IBAction)addButtonPressed:(id)sender;
 
 @end
 
@@ -75,5 +76,25 @@
     WelcomeViewController *welcomeVC = [storyboard instantiateViewControllerWithIdentifier:@"WelcomeViewController"];
     welcomeVC.delegate = self;
     [self presentViewController:welcomeVC animated:YES completion:nil];
+}
+
+- (IBAction)addButtonPressed:(id)sender {
+    UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:@"Select Type of Post:" delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles:@"Open Challenge", @"Trash Talk", @"Practice request", @"Match Result", nil];
+    [actionSheet showFromTabBar:self.tabBarController.tabBar];
+}
+
+-(void)actionSheet:(UIActionSheet *)actionSheet didDismissWithButtonIndex:(NSInteger)buttonIndex {
+    if (buttonIndex == 0) {
+        // OPen challenge pressed
+    } else if (buttonIndex == 1) {
+        //Trash talk
+    } else if (buttonIndex == 2) {
+        //Practice request
+    } else if (buttonIndex == 3) {
+        // Match Result
+    }
+    
+    
+    
 }
 @end

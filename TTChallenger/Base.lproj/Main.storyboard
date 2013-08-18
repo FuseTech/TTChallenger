@@ -242,7 +242,7 @@
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="wNA-eg-rbG">
                                             <connections>
-                                                <segue destination="0ZJ-FG-LaY" kind="modal" id="QZe-qW-UW3"/>
+                                                <action selector="addButtonPressed:" destination="vXZ-lx-hvc" id="0wz-8I-fd5"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -301,16 +301,16 @@
             </objects>
             <point key="canvasLocation" x="3742" y="-1594"/>
         </scene>
-        <!--View Controller-->
+        <!--Profile View Controller - My Profile-->
         <scene sceneID="eCh-Jb-BH2">
             <objects>
-                <viewController id="ZKf-rQ-nvH" sceneMemberID="viewController">
+                <viewController id="ZKf-rQ-nvH" customClass="ProfileViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="sj4-YJ-BA7"/>
                         <viewControllerLayoutGuide type="bottom" id="6CN-g1-n7w"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="qp7-Tz-Bt7">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="User page" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MuB-jo-NkB">
@@ -334,10 +334,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="My Profile" id="dJj-EX-6pw"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P72-l8-Auq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4171" y="-547"/>
+            <point key="canvasLocation" x="3180" y="-187"/>
         </scene>
         <!--Play Now View Controller - Play Now-->
         <scene sceneID="q60-Cm-GqX">
@@ -405,6 +406,7 @@
                     <connections>
                         <segue destination="vXZ-lx-hvc" kind="relationship" relationship="viewControllers" id="Lqv-GU-Thw"/>
                         <segue destination="PxI-vF-ZII" kind="relationship" relationship="viewControllers" id="NW0-Y1-2Yp"/>
+                        <segue destination="ZKf-rQ-nvH" kind="relationship" relationship="viewControllers" id="9PU-4u-EsN"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NiU-F5-d9m" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -16,5 +16,6 @@
 +(FatFractal *)ff;
 +(KeychainItemWrapper *)keychainItem;
 +(BOOL)checkForAuthentication;
++(void)userLogout;
 
 @end

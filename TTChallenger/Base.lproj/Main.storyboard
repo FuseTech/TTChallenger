@@ -235,6 +235,11 @@
                                 <color key="barTintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <items>
                                     <navigationItem title="Title" id="sgW-BI-dF9">
+                                        <barButtonItem key="leftBarButtonItem" title="Logout" id="dNd-iK-rhY">
+                                            <connections>
+                                                <action selector="logoutPressed:" destination="vXZ-lx-hvc" id="iTk-Az-acV"/>
+                                            </connections>
+                                        </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="wNA-eg-rbG">
                                             <connections>
                                                 <segue destination="0ZJ-FG-LaY" kind="modal" id="QZe-qW-UW3"/>

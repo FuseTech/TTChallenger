@@ -11,6 +11,8 @@
 
 @interface PostsViewController ()
 
+- (IBAction)logoutPressed:(id)sender;
+
 @end
 
 @implementation PostsViewController
@@ -59,10 +61,19 @@
 -(void)userIsAuthenticatedFromAppDelegateOnLaunch{
     //User was autologged in. Call methods responsible for refreshing table data
     
+    
 }
 
 -(void)userDidAuthenticate{
     
 }
 
+- (IBAction)logoutPressed:(id)sender {
+    [[FatFractal main] logout];
+    [AppDelegate userLogout];
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    WelcomeViewController *welcomeVC = [storyboard instantiateViewControllerWithIdentifier:@"WelcomeViewController"];
+    welcomeVC.delegate = self;
+    [self presentViewController:welcomeVC animated:YES completion:nil];
+}
 @end

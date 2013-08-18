@@ -103,6 +103,9 @@ static NSString *keychainIdentifier = @"TTChallengerAppKeychain";
         return NO;
     }
 }
++(void)userLogout {
+    [_keychainItem resetKeychainItem];
+}
 
 -(void)userSuccessfullyAuthenticated {
     [self.postsVC userIsAuthenticatedFromAppDelegateOnLaunch];

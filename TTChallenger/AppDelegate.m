@@ -7,12 +7,19 @@
 //
 
 #import "AppDelegate.h"
+#import "PostsViewController.h"
+#import "WelcomeViewController.h"
+
 static NSString *baseUrl = @"http://wchambers.fatfractal.com/TTChallenger";
 static NSString *sslUrl = @"https://wchambers.fatfractal.com/TTChallenger";
 static FatFractal *_ff;
 static KeychainItemWrapper *_keychainItem;
+static NSString *keychainIdentifier = @"TTChallengerAppKeychain";
 
+@interface AppDelegate ()
+@property PostsViewController *postsVC;
 
+@end
 @implementation AppDelegate
 
 +(FatFractal *)ff {
@@ -28,6 +35,37 @@ static KeychainItemWrapper *_keychainItem;
     // Override point for customization after application launch.
     _ff = [[FatFractal alloc] initWithBaseUrl:baseUrl sslUrl:sslUrl];
     _ff.debug = YES;
+    
+    _keychainItem = [[KeychainItemWrapper alloc] initWithIdentifier:keychainIdentifier accessGroup:nil];
+    
+    /* If Keychain Item exists, attempt login */
+    if ([_keychainItem objectForKey:(__bridge id)(kSecAttrAccount)] != nil && ![[_keychainItem objectForKey:(__bridge id)(kSecAttrAccount)] isEqual:@""]) {
+        NSLog(@"_keychainItem username exists, attempting login in background.");
+        
+        NSString *username = [_keychainItem objectForKey:(__bridge id)(kSecAttrAccount)];
+        NSString *password = [_keychainItem objectForKey:(__bridge id)(kSecValueData)];
+        
+        /* Login with FatFractal by initiating connection with server */
+        // Step 1
+        [_ff loginWithUserName:username andPassword:password onComplete:^(NSError *theErr, id theObj, NSHTTPURLResponse *theResponse) {
+            
+            // Step 2
+            if (theErr) {
+                NSLog(@"Error trying to log in from AppDelegate: %@", [theErr localizedDescription]);
+                // Probably keychain item is corrupted, reset the keychain and force user to sign up/ login again.
+                // Better error handling can be done in a production application.
+                [_keychainItem resetKeychainItem];
+                return ;
+            }
+            
+            // Step 3
+            if (theObj) {
+                NSLog(@"Login from AppDelegate using keychain successful!");
+                [self userSuccessfullyAuthenticated];
+            }
+        }];
+    }
+    
     return YES;
 }
 							
@@ -64,6 +102,10 @@ static KeychainItemWrapper *_keychainItem;
     } else {
         return NO;
     }
+}
+
+-(void)userSuccessfullyAuthenticated {
+    [self.postsVC userIsAuthenticatedFromAppDelegateOnLaunch];
 }
 
 @end

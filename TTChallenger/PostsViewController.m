@@ -57,6 +57,7 @@
 }
 
 -(void)userIsAuthenticatedFromAppDelegateOnLaunch{
+    //User was autologged in. Call methods responsible for refreshing table data
     
 }
 

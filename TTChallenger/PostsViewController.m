@@ -86,15 +86,19 @@
 -(void)actionSheet:(UIActionSheet *)actionSheet didDismissWithButtonIndex:(NSInteger)buttonIndex {
     if (buttonIndex == 0) {
         // OPen challenge pressed
+        [self performSegueWithIdentifier:@"openChallengeSegue" sender:self];
     } else if (buttonIndex == 1) {
         //Trash talk
+        [self performSegueWithIdentifier:@"trashTalkSegue" sender:self];
     } else if (buttonIndex == 2) {
         //Practice request
+        [self performSegueWithIdentifier:@"practiceRequestSegue" sender:self];
     } else if (buttonIndex == 3) {
         // Match Result
+        [self performSegueWithIdentifier:@"matchResultSegue" sender:self];
     }
-    
-    
+}
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     
 }
 @end

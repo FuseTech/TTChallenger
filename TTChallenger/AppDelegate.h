@@ -8,14 +8,19 @@
 
 #import <UIKit/UIKit.h>
 #import "KeychainItemWrapper.h"
+#import <MultipeerConnectivity/MultipeerConnectivity.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (nonatomic, strong) MCSession *session;
 
 +(FatFractal *)ff;
 +(KeychainItemWrapper *)keychainItem;
 +(BOOL)checkForAuthentication;
 +(void)userLogout;
+-(void)startAdvertising;
+-(void)stopAdvertising;
+
 
 @end

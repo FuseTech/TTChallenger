@@ -10,6 +10,8 @@
 #import "PostsViewController.h"
 #import "WelcomeViewController.h"
 
+
+
 static NSString *baseUrl = @"http://wchambers.fatfractal.com/TTChallenger";
 static NSString *sslUrl = @"https://wchambers.fatfractal.com/TTChallenger";
 static FatFractal *_ff;
@@ -18,6 +20,10 @@ static NSString *keychainIdentifier = @"TTChallengerAppKeychain";
 
 @interface AppDelegate ()
 @property PostsViewController *postsVC;
+
+@property (nonatomic, strong) MCPeerID *peerID;
+
+@property (nonatomic, strong) MCAdvertiserAssistant *assistant;
 
 @end
 @implementation AppDelegate
@@ -65,6 +71,7 @@ static NSString *keychainIdentifier = @"TTChallengerAppKeychain";
             }
         }];
     }
+
     
     return YES;
 }
@@ -108,7 +115,20 @@ static NSString *keychainIdentifier = @"TTChallengerAppKeychain";
 }
 
 -(void)userSuccessfullyAuthenticated {
+    [self startAdvertising];
     [self.postsVC userIsAuthenticatedFromAppDelegateOnLaunch];
 }
+
+-(void)startAdvertising {
+    self.peerID = [[MCPeerID alloc] initWithDisplayName:[[FatFractal main] loggedInUser].userName];
+    self.session = [[MCSession alloc] initWithPeer:self.peerID];
+    //self.session.delegate = self;
+    self.assistant = [[MCAdvertiserAssistant alloc] initWithServiceType:@"TTC" discoveryInfo:nil session:self.session];
+    [self.assistant start];
+}
+-(void)stopAdvertising {
+    [self.assistant stop];
+}
+
 
 @end

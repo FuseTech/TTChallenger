@@ -66,12 +66,16 @@
 }
 
 -(void)userDidAuthenticate{
+    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    [appDelegate startAdvertising];
     
 }
 
 - (IBAction)logoutPressed:(id)sender {
     [[FatFractal main] logout];
     [AppDelegate userLogout];
+    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    [appDelegate stopAdvertising];
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     WelcomeViewController *welcomeVC = [storyboard instantiateViewControllerWithIdentifier:@"WelcomeViewController"];
     welcomeVC.delegate = self;

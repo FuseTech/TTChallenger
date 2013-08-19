@@ -8,6 +8,7 @@
 
 #import "PlayNowViewController.h"
 #import <MultipeerConnectivity/MultipeerConnectivity.h>
+#import "AppDelegate.h"
 
 @interface PlayNowViewController () < MCBrowserViewControllerDelegate, MCSessionDelegate>
 @property (nonatomic, strong) MCPeerID *peerID;
@@ -35,10 +36,24 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
 }
 
 -(void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
+    AppDelegate *delegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    self.session = delegate.session;
+    self.session.delegate = self;
+    
+    self.browserVC = nil;
+    self.peerID = [[MCPeerID alloc] initWithDisplayName:[[FatFractal main] loggedInUser].userName];
+    self.session = [[MCSession alloc] initWithPeer:self.peerID];
+    self.session.delegate = self;
+    if (!self.browserVC) {
+        self.browserVC = [[MCBrowserViewController alloc] initWithServiceType:@"TTC" session:self.session];
+        self.browserVC.delegate = self;
+    }
+    [self presentViewController:self.browserVC animated:NO completion:nil];
     
 }
 
@@ -48,29 +63,29 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)lookingForChallengeSwitch:(UISwitch *)theSwitch {
-    if (theSwitch.isOn) {
-        [self setUpAdvertiser];
-    } else if (!theSwitch.isOn) {
-        [self turnOffAdvertiser];
-        
-    }
-}
+//- (IBAction)lookingForChallengeSwitch:(UISwitch *)theSwitch {
+//    if (theSwitch.isOn) {
+//        [self setUpAdvertiser];
+//    } else if (!theSwitch.isOn) {
+//        [self turnOffAdvertiser];
+//        
+//    }
+//}
 
--(void)setUpAdvertiser {
-    self.peerID = [[MCPeerID alloc] initWithDisplayName:[[FatFractal main] loggedInUser].userName];
-    self.session = [[MCSession alloc] initWithPeer:self.peerID];
-    self.session.delegate = self;
-    
-    self.assistant = [[MCAdvertiserAssistant alloc] initWithServiceType:@"TTC" discoveryInfo:nil session:self.session];
-    [self.assistant start];
-    
-}
-
--(void)turnOffAdvertiser {
-    [self.assistant stop];
-    
-}
+//-(void)setUpAdvertiser {
+//    self.peerID = [[MCPeerID alloc] initWithDisplayName:[[FatFractal main] loggedInUser].userName];
+//    self.session = [[MCSession alloc] initWithPeer:self.peerID];
+//    self.session.delegate = self;
+//    
+//    self.assistant = [[MCAdvertiserAssistant alloc] initWithServiceType:@"TTC" discoveryInfo:nil session:self.session];
+//    [self.assistant start];
+//    
+//}
+//
+//-(void)turnOffAdvertiser {
+//    [self.assistant stop];
+//    
+//}
 
 -(void)browserViewControllerDidFinish:(MCBrowserViewController *)browserViewController {
     [browserViewController dismissViewControllerAnimated:YES completion:nil];

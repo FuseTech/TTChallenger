@@ -32,6 +32,9 @@
 		360B802417BD72CC00B655F8 /* SignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 360B802317BD72CC00B655F8 /* SignupViewController.m */; };
 		360B802717BD72D900B655F8 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 360B802617BD72D900B655F8 /* LoginViewController.m */; };
 		361FFAD717C17F8100C45563 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 361FFAD617C17F8100C45563 /* ProfileViewController.m */; };
+		36A5E93917C2738F001FE1E8 /* Match.m in Sources */ = {isa = PBXBuildFile; fileRef = 36A5E93817C2738F001FE1E8 /* Match.m */; };
+		36A5E93D17C2773A001FE1E8 /* OpenChallengeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36A5E93C17C2773A001FE1E8 /* OpenChallengeViewController.m */; };
+		36A5E94117C277C0001FE1E8 /* CreateMatchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36A5E94017C277C0001FE1E8 /* CreateMatchViewController.m */; };
 		4C3BE57517C1965800E5CAAA /* FFEF.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C3BE57417C1965800E5CAAA /* FFEF.framework */; };
 /* End PBXBuildFile section */
 
@@ -85,6 +88,12 @@
 		360B802617BD72D900B655F8 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		361FFAD517C17F8100C45563 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
 		361FFAD617C17F8100C45563 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		36A5E93717C2738F001FE1E8 /* Match.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Match.h; sourceTree = "<group>"; };
+		36A5E93817C2738F001FE1E8 /* Match.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Match.m; sourceTree = "<group>"; };
+		36A5E93B17C2773A001FE1E8 /* OpenChallengeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenChallengeViewController.h; sourceTree = "<group>"; };
+		36A5E93C17C2773A001FE1E8 /* OpenChallengeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenChallengeViewController.m; sourceTree = "<group>"; };
+		36A5E93F17C277C0001FE1E8 /* CreateMatchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateMatchViewController.h; sourceTree = "<group>"; };
+		36A5E94017C277C0001FE1E8 /* CreateMatchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateMatchViewController.m; sourceTree = "<group>"; };
 		4C3BE57417C1965800E5CAAA /* FFEF.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FFEF.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -119,6 +128,8 @@
 			children = (
 				3600FB2C17BEB272007B8A5A /* Post.h */,
 				3600FB2D17BEB272007B8A5A /* Post.m */,
+				36A5E93717C2738F001FE1E8 /* Match.h */,
+				36A5E93817C2738F001FE1E8 /* Match.m */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -128,8 +139,11 @@
 			children = (
 				3601575C17BD846500B2209D /* PostsViewController.h */,
 				3601575D17BD846500B2209D /* PostsViewController.m */,
+				36A5E93A17C2771E001FE1E8 /* PostTypes */,
 				3600FB2817BEA5F6007B8A5A /* PlayNowViewController.h */,
 				3600FB2917BEA5F6007B8A5A /* PlayNowViewController.m */,
+				36A5E93F17C277C0001FE1E8 /* CreateMatchViewController.h */,
+				36A5E94017C277C0001FE1E8 /* CreateMatchViewController.m */,
 				361FFAD517C17F8100C45563 /* ProfileViewController.h */,
 				361FFAD617C17F8100C45563 /* ProfileViewController.m */,
 			);
@@ -240,6 +254,15 @@
 			name = Welcome;
 			sourceTree = "<group>";
 		};
+		36A5E93A17C2771E001FE1E8 /* PostTypes */ = {
+			isa = PBXGroup;
+			children = (
+				36A5E93B17C2773A001FE1E8 /* OpenChallengeViewController.h */,
+				36A5E93C17C2773A001FE1E8 /* OpenChallengeViewController.m */,
+			);
+			name = PostTypes;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -342,12 +365,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				360B7FFC17BD6EB300B655F8 /* ViewController.m in Sources */,
+				36A5E93917C2738F001FE1E8 /* Match.m in Sources */,
 				3601575E17BD846500B2209D /* PostsViewController.m in Sources */,
 				360B802117BD72BC00B655F8 /* WelcomeViewController.m in Sources */,
+				36A5E94117C277C0001FE1E8 /* CreateMatchViewController.m in Sources */,
 				3600FB2A17BEA5F6007B8A5A /* PlayNowViewController.m in Sources */,
 				360B802717BD72D900B655F8 /* LoginViewController.m in Sources */,
 				3601576417BD8E5800B2209D /* MBProgressHUD.m in Sources */,
 				3601576317BD8E5800B2209D /* KeychainItemWrapper.m in Sources */,
+				36A5E93D17C2773A001FE1E8 /* OpenChallengeViewController.m in Sources */,
 				360B7FF617BD6EB300B655F8 /* AppDelegate.m in Sources */,
 				3600FB2E17BEB272007B8A5A /* Post.m in Sources */,
 				360B7FF217BD6EB300B655F8 /* main.m in Sources */,

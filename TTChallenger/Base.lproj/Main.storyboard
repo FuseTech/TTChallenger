@@ -279,6 +279,7 @@
                                 </state>
                                 <connections>
                                     <action selector="challengeAcceptedPressed:" destination="FWN-MY-YiB" eventType="touchUpInside" id="2kf-j2-JSv"/>
+                                    <segue destination="e9J-7e-Ny4" kind="modal" identifier="challengeAcceptedSegue" id="Qmy-43-1k8"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -287,7 +288,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K6o-5i-PYc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3514" y="-2288"/>
+            <point key="canvasLocation" x="3518" y="-2288"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="gF4-IR-yp2">
@@ -428,15 +429,18 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Play Now" id="nWy-yn-paE"/>
+                    <connections>
+                        <segue destination="e9J-7e-Ny4" kind="modal" identifier="createMatchSegue" id="24G-by-nhq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dBu-Kd-SkX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3180" y="-873"/>
         </scene>
-        <!--View Controller-->
+        <!--Create Match View Controller-->
         <scene sceneID="i7C-is-PFe">
             <objects>
-                <viewController id="e9J-7e-Ny4" sceneMemberID="viewController">
+                <viewController id="e9J-7e-Ny4" customClass="CreateMatchViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="GTH-lQ-UGj"/>
                         <viewControllerLayoutGuide type="bottom" id="5UU-VF-jZK"/>
@@ -449,7 +453,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYa-gN-nvK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3720" y="-879"/>
+            <point key="canvasLocation" x="3914" y="-873"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="XKj-T2-zDW">
@@ -470,7 +474,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NiU-F5-d9m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2467" y="-1036"/>
+            <point key="canvasLocation" x="2435" y="-873"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
@@ -478,4 +482,7 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="Qmy-43-1k8"/>
+    </inferredMetricsTieBreakers>
 </document>

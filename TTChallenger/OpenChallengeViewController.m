@@ -9,6 +9,8 @@
 #import "OpenChallengeViewController.h"
 
 @interface OpenChallengeViewController ()
+- (IBAction)challengeAcceptedPressed:(id)sender;
+
 
 @end
 
@@ -35,4 +37,6 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)challengeAcceptedPressed:(id)sender {
+}
 @end

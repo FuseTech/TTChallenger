@@ -36,11 +36,6 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    
-}
-
--(void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
     AppDelegate *delegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     self.session = delegate.session;
     self.session.delegate = self;
@@ -54,6 +49,13 @@
         self.browserVC.delegate = self;
     }
     [self presentViewController:self.browserVC animated:NO completion:nil];
+    
+    
+}
+
+-(void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+ 
     
 }
 
@@ -93,6 +95,13 @@
 -(void)browserViewControllerWasCancelled:(MCBrowserViewController *)browserViewController {
     [browserViewController dismissViewControllerAnimated:YES completion:nil];
 }
+-(BOOL)browserViewController:(MCBrowserViewController *)browserViewController shouldPresentNearbyPeer:(MCPeerID *)peerID withDiscoveryInfo:(NSDictionary *)info {
+    if ([peerID.displayName isEqualToString:self.peerID.displayName]) {
+        return NO;
+    } else {
+        return YES;
+    }
+}
 
 
 
@@ -113,6 +122,10 @@
     }
     
 }
+
+
+
+
 
 -(void)createMatchBetween:(NSString *)challenger andOpponent:(NSString *)opponent {
     NSLog(@"Stop");

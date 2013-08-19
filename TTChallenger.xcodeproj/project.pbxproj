@@ -287,6 +287,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Weston Chambers";
 				TargetAttributes = {
+					360B7FE117BD6EB300B655F8 = {
+						DevelopmentTeam = KYUU462D36;
+					};
 					360B800217BD6EB300B655F8 = {
 						TestTargetID = 360B7FE117BD6EB300B655F8;
 					};
@@ -472,6 +475,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/wechambers/Development/Practice/TTChallenger,
@@ -482,6 +487,7 @@
 				GCC_PREFIX_HEADER = "TTChallenger/TTChallenger-Prefix.pch";
 				INFOPLIST_FILE = "TTChallenger/TTChallenger-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -491,6 +497,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/wechambers/Development/Practice/TTChallenger,
@@ -501,6 +509,7 @@
 				GCC_PREFIX_HEADER = "TTChallenger/TTChallenger-Prefix.pch";
 				INFOPLIST_FILE = "TTChallenger/TTChallenger-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

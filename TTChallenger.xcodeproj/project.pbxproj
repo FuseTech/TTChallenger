@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1BE91A8F17BE852E00BEDEF1 /* FFEF.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BE91A8E17BE852E00BEDEF1 /* FFEF.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		3600FB2A17BEA5F6007B8A5A /* PlayNowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3600FB2917BEA5F6007B8A5A /* PlayNowViewController.m */; };
 		3600FB2E17BEB272007B8A5A /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = 3600FB2D17BEB272007B8A5A /* Post.m */; };
 		3600FB3017BEB7A2007B8A5A /* picture.png in Resources */ = {isa = PBXBuildFile; fileRef = 3600FB2F17BEB7A2007B8A5A /* picture.png */; };
@@ -33,6 +32,7 @@
 		360B802417BD72CC00B655F8 /* SignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 360B802317BD72CC00B655F8 /* SignupViewController.m */; };
 		360B802717BD72D900B655F8 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 360B802617BD72D900B655F8 /* LoginViewController.m */; };
 		361FFAD717C17F8100C45563 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 361FFAD617C17F8100C45563 /* ProfileViewController.m */; };
+		4C3BE57517C1965800E5CAAA /* FFEF.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C3BE57417C1965800E5CAAA /* FFEF.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +46,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1BE91A8E17BE852E00BEDEF1 /* FFEF.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FFEF.framework; sourceTree = "<group>"; };
 		3600FB2817BEA5F6007B8A5A /* PlayNowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayNowViewController.h; sourceTree = "<group>"; };
 		3600FB2917BEA5F6007B8A5A /* PlayNowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayNowViewController.m; sourceTree = "<group>"; };
 		3600FB2C17BEB272007B8A5A /* Post.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Post.h; sourceTree = "<group>"; };
@@ -86,6 +85,7 @@
 		360B802617BD72D900B655F8 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		361FFAD517C17F8100C45563 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
 		361FFAD617C17F8100C45563 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		4C3BE57417C1965800E5CAAA /* FFEF.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FFEF.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +95,7 @@
 			files = (
 				360B801D17BD6EDE00B655F8 /* MultipeerConnectivity.framework in Frameworks */,
 				360B7FE817BD6EB300B655F8 /* CoreGraphics.framework in Frameworks */,
-				1BE91A8F17BE852E00BEDEF1 /* FFEF.framework in Frameworks */,
+				4C3BE57517C1965800E5CAAA /* FFEF.framework in Frameworks */,
 				360B7FEA17BD6EB300B655F8 /* UIKit.framework in Frameworks */,
 				360B7FE617BD6EB300B655F8 /* Foundation.framework in Frameworks */,
 			);
@@ -169,7 +169,7 @@
 		360B7FE417BD6EB300B655F8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1BE91A8E17BE852E00BEDEF1 /* FFEF.framework */,
+				4C3BE57417C1965800E5CAAA /* FFEF.framework */,
 				360B801C17BD6EDE00B655F8 /* MultipeerConnectivity.framework */,
 				360B7FE517BD6EB300B655F8 /* Foundation.framework */,
 				360B7FE717BD6EB300B655F8 /* CoreGraphics.framework */,
@@ -476,6 +476,7 @@
 					"$(inherited)",
 					/Users/wechambers/Development/Practice/TTChallenger,
 					/Users/umanjunath/Documents/TTChallenger,
+					/Users/FuseTech/Development/TTChallenger,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TTChallenger/TTChallenger-Prefix.pch";
@@ -494,6 +495,7 @@
 					"$(inherited)",
 					/Users/wechambers/Development/Practice/TTChallenger,
 					/Users/umanjunath/Documents/TTChallenger,
+					/Users/FuseTech/Development/TTChallenger,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TTChallenger/TTChallenger-Prefix.pch";
